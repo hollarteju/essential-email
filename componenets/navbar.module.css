@@ -37,7 +37,7 @@
     opacity: 0.7;
 }
 
-@media screen and (max-width:1440px){
+@media(max-width:1440px){
 
     .linksContainer{
         gap: 12rem;
@@ -68,3 +68,14 @@
 
 }
 
+@media(max-width:1045px){
+    
+    .linksContainer{
+        gap: 7rem;
+    }
+    
+    .links{
+        display: flex;
+        gap: 4rem;
+    }
+}

@@ -37,11 +37,12 @@
     z-index: 1000 !important;
 }
 
-@media screen and (max-width:1440px){
 
-.headlineContainer{
-    height: 1028px;
-}
+
+@media screen and (max-width:1440px){
+    .headline{
+        padding-bottom: 16.5rem;
+    }
 
 .headline p{
     font-size: 24px;
@@ -83,4 +84,31 @@
     top: 470px;
 }
 
+}
+
+@media(max-width:1045px){
+    .headline{
+        padding-top: 12rem;
+        padding-bottom: 7.3rem;
+        gap: 2rem;
+    }
+
+    .laptop{
+        width: 601px;
+        top: 200px;
+    }
+
+    .profile{
+        width: 200px;
+        height: 200px;
+        left: 500px;
+        top:197px
+    }
+    
+    .group{
+        left: 440px ;
+        top: 370px;
+        width: 145px;
+        height: 110px;
+    }
 }
