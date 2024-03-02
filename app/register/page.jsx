@@ -6,7 +6,7 @@ import { FaUser } from "react-icons/fa";
 import { SlCalender } from "react-icons/sl";
 import { CiLock } from "react-icons/ci";
 import { FaRegEnvelope } from "react-icons/fa6";
-import { IoMdArrowDropright } from "react-icons/io";
+import Footer from "../../componenets/footer"
 
 const Register = ()=>{
     function next_btn(param){
@@ -189,15 +189,7 @@ const Register = ()=>{
                     </div>
                 </div>
             </div>
-            <footer class={`${style.footer} flex lg:gap-[233px] justify-center mx-auto mt-[8rem]`}>
-                <div className="flex text-center items-center gap-1">
-                    <span class="hover:text-blue-500 "><Link href="#">English Language (Nig) </Link></span>
-                    <i><IoMdArrowDropright /></i>
-                </div>
-                <span class="hover:text-blue-500"><Link href="#">Help</Link></span>
-                <span class="hover:text-blue-500"><Link href="#">Terms</Link></span>
-                <span class="hover:text-blue-500"><Link href="#">Privacy</Link></span>
-            </footer>
+            <Footer/>
     </div>
     )
 }

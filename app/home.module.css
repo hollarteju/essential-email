@@ -1,0 +1,86 @@
+.headline{
+    background-image: url("./images/Vector.png");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size:100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    -webkit-background-clip: border-box;
+    z-index: 100;
+}
+
+.laptop{
+    background-image: url("./images/laptop.png");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+.profile{
+    background-image: url("./images/profile.png");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size:100%;
+    z-index: 200;
+}
+
+.group{
+    background-image: url("./images/group.png");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size:100%;
+    z-index: 150;
+}
+
+.footer span{
+    z-index: 1000 !important;
+}
+
+@media screen and (max-width:1440px){
+
+.headlineContainer{
+    height: 1028px;
+}
+
+.headline p{
+    font-size: 24px;
+    width: 462px;
+}
+
+.headline button{
+    width: 226px;
+    font-size: 18px;
+}
+
+.span{
+    font-size: 12px;
+    width: 187px;
+}
+
+.footer{
+    font-size: 12px;
+    bottom: 0;
+    left: 40rem;
+    z-index: 1000 !important;
+}
+
+
+.laptop{
+    width: 801px;
+    top: 240px;
+}
+
+.profile{
+    width: 300px;
+    height: 300px;
+    left: 600px;
+    top:207px
+}
+
+.group{
+    left: 540px ;
+    top: 470px;
+}
+
+}

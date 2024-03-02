@@ -1,9 +1,10 @@
 
 import {PostProvider} from "@/context/index"
-import { Lato } from "next/font/google";
+import { Lato, Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Lato({weight: ["300","400","700","900"], subsets: ["latin"] });
+const lato = Lato({weight: ["300","400","700","900"], subsets: ["latin"] });
+const inter = Inter({weight: ["300","400","700","900"], subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
