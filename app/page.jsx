@@ -9,14 +9,14 @@ export default function Home() {
   return (
     <div class="w-full relative overflow-hidden  ">
       <NavBar/>
-      <div className={`${style.headlineContainer} w-full  relative grid grid-cols-4 bg-gray-300 gap[20px]`}>
+      <div className={`${style.headlineContainer} w-[100%] h-100vh  relative grid grid-cols-4 bg-gray-300 gap[20px] g:pb-[11rem]`}>
         
-        <div className={`${style.headline}  text-white h-full col-span-3 lg:px-[10%] lg:pt-[15rem] lg:pb-[25rem]`}>
-          <p className={`sm:pr-[80px] lg:w-[517px] lg:text-[32px] sm:text-[20px] font-semibold`}>
+        <div className={`${style.headline} relative  text-white h-full col-span-3 px-[10%] lg:pt-[15rem] l`}>
+          <p className={` lg:w-[517px] md:max-w-[350px] lg:text-[32px] md:text-[20px] font-semibold`}>
                 Lorem ipsum dolor sit amet consectetur. Elit ut 
                 turpis rhoncus mauris adipiscing curabitur.
           </p>
-          <button class={`lg:w-[302px] sm:max-w-[200px] py-[25px] text-[24px] font-600 bg-[#B80C09] rounded-[10px] self-left hover:opacity-[0.7]`}>
+          <button class={`lg:w-[302px] md:max-w-[150px] py-[25px] md:py-[20px] text-[24px] font-600 bg-[#B80C09] rounded-[10px] self-left hover:opacity-[0.7]`}>
             Get Started
           </button>
           <span className={` text-[16px] w-[250px] font-600`}>
@@ -29,8 +29,15 @@ export default function Home() {
             Lorem ipsum dolor sit amet consectetur.
           </span>
         </div>
-        <div className="absolute py-6 left-[25%] bottom-[0]">
-            <footer class={`${style.footer} text-[16px] font-[700] flex lg:gap-[183px] justify-center mx-auto mt-[8rem]`}>
+        
+        <div class="absolute w-full h-full">
+          <div className={`${style.laptop} absolute top-[20%] h-[812px] w-[50%] right-[0%]`}></div>
+          <div class={`${style.profile} absolute  top-[20%] h-full  w-[17%] lg:right-[18%] md:right-[33.5%] `}></div>
+          <div class={` ${style.group} none absolute top-[40%] h-full w-[10%] lg:right-[40%] md:right-[45%]`}></div>
+          </div>
+      </div>
+      <div className="absolute py-6 lg:left-[0%] md:left-[0%] bottom-[0]">
+            <footer class={`${style.footer} text-[16px] font-[700] flex lg:gap-[183px] md:gap-[123px]  w-screen justify-center mx-auto mt-[8rem]`}>
                 <div className="flex text-center items-center gap-1">
                     <span class="text-white "><Link href="#">English Language (Nig) </Link></span>
                     <i class="text-white "><IoMdArrowDropright /></i>
@@ -40,11 +47,6 @@ export default function Home() {
                 <span ><Link href="#">Privacy</Link></span>
             </footer>
         </div>
-        <div className={`${style.laptop} absolute top-[311px] h-[812px] lg:w-[1038px] right-[0%]`}></div>
-        <div class={`${style.profile} absolute top-[257px] h-[420px] w-[420px] left-[822px]`}></div>
-        <div class={`${style.group} absolute top-[654px] h-[221px] w-[245px] left-[770px]`}></div>
-      </div>
-        
     </div>
       );
 }
