@@ -12,11 +12,11 @@ export default function Home() {
       <div className={`${style.headlineContainer} w-[100%] h-100vh  relative grid grid-cols-4 bg-gray-300 gap[20px] g:pb-[11rem]`}>
         
         <div className={`${style.headline} relative  text-white h-full col-span-3 px-[10%] lg:pt-[15rem] l`}>
-          <p className={` lg:w-[517px] md:max-w-[350px] lg:text-[32px] md:text-[20px] font-semibold`}>
+          <p className={` lg:w-[517px] lg:text-[32px]  font-semibold`}>
                 Lorem ipsum dolor sit amet consectetur. Elit ut 
                 turpis rhoncus mauris adipiscing curabitur.
           </p>
-          <button class={`lg:w-[302px] md:max-w-[150px] py-[25px] md:py-[20px] text-[24px] font-600 bg-[#B80C09] rounded-[10px] self-left hover:opacity-[0.7]`}>
+          <button class={`lg:w-[302px] py-[25px] md:py-[20px] text-[24px] font-600 bg-[#B80C09] rounded-[10px] self-left hover:opacity-[0.7]`}>
             Get Started
           </button>
           <span className={` text-[16px] w-[250px] font-600`}>
